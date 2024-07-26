@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.opened-collapse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ff6060;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+@media only screen and (min-width: 1024px) {
+  .opened-collapse {
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+}
+
+.opened-collapse h2 {
+  font-size: 13px;
+}
+@media only screen and (min-width: 1024px) {
+  .opened-collapse h2 {
+    font-size: 24px;
+  }
+}
+
+.opened-collapse i {
+  transition: transform 0.3s ease-in-out;
+}
+
+.rotate-chevron {
+  transform: rotate(180deg);
+}
+
+.full-collapse {
+  background: white;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.collapse-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+  padding: 0 20px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 142.6%;
+}
+@media only screen and (min-width: 1024px) {
+  .collapse-content {
+    font-size: 18px;
+  }
+}
+
+.show-content {
+  max-height: 600px;
+  background-color: white;
+  opacity: 1;
+  padding: 20px;
+}
+
+.about-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+  margin: auto;
+}
+@media only screen and (min-width: 1024px) {
+  .about-benefits {
+    width: 82.5%;
+    padding-top: 38px;
+    gap: 30px;
+  }
+}/*# sourceMappingURL=collapse.css.map */

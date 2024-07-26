@@ -1,0 +1,106 @@
+@import "./main.scss";
+
+.background {
+  background-color: $background-layout;
+  z-index: -1;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  padding: 5px 20px 0 20px;
+
+  @media (min-width: 992px) {
+    padding: 5px 100px 0 100px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 5px 100px 0 100px;
+  }
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 25px 50px 20px 50px;
+
+  .logo {
+    width: 145px;
+
+    @media (min-width: 768px) {
+      height: 68px;
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      gap: 26px;
+
+      @media (min-width: 768px) {
+        gap: 57px;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      a {
+        color: #000;
+        text-align: right;
+        font-weight: 500;
+        text-decoration-line: none;
+        text-transform: uppercase;
+
+        &.active {
+          text-decoration: underline;
+        }
+
+        @media (min-width: 768px) {
+          text-transform: none;
+        }
+      }
+    }
+  }
+}
+
+main {
+  padding: 27px 20px;
+
+  @media only screen and (min-width: 992px) {
+    padding: 38px 50px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 50px 100px;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4em;
+
+  color: $font-color-footer;
+  padding: 5.5em 10em 5em 10em;
+
+  @media (min-width: 768px) {
+    padding: 3.67em 0 1.6em;
+  }
+
+  .logo-footer {
+    width: 122px;
+  }
+
+  p {
+    text-align: center;
+
+    @media (min-width: 768px) {
+      font-size: 1.33rem;
+    }
+  }
+}
