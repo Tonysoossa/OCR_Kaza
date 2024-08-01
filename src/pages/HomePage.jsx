@@ -1,6 +1,6 @@
 import Banner from "../components/Banner";
 
-const homeBannerImg = "../images/banner-kasa-home.png";
+import homeBannerImg from "../images/banner-kasa-home.png";
 
 const HomePage = () => {
   return (
