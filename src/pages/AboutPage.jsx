@@ -28,8 +28,7 @@ const AboutPage = () => {
       <Banner
         imageUrl={aboutBannerImg}
         alt="Paysage de montagnes"
-        // overlayOpacity={0.4}
-       
+        overlayOpacity={0.3}
       />
       <div className="about-benefits">
         <Collapse title="Fiabilité">

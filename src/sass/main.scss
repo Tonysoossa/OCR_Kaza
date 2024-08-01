@@ -3,7 +3,8 @@ $background-layout: #000;
 $font-color-footer: #fff;
 $font-family: "Montserrat", sans-serif;
 $font-size-mobile: 12px;
-$font-size-desktop: 18px;
+$font-size-desktop: 20px;
+$font-size-desktopXL: 25px;
 
 * {
   margin: 0;
@@ -31,6 +32,10 @@ a {
 main {
   background-color: white;
   padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .errorPage {

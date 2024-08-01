@@ -1,74 +1,54 @@
 @import "./main.scss";
 
 .banner {
-  width: calc(100% + 70px);
-  margin-left: -35px;
-  background-size: cover;
-  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   position: relative;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   overflow: hidden;
+  z-index: 0;
+
   img {
-    position: absolute;
     width: 100%;
-    top: 0;
-    left: 0;
   }
 
   .overlay {
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
     z-index: 1;
-    border-radius: inherit;
-    opacity: 25%;
-  }
-
-  .opacity-40 {
-    opacity: 40%;
-  }
-  .opacity-60 {
-    opacity: 60%;
   }
 
   .banner-title {
     color: #fff;
     font-family: Montserrat, sans-serif;
-    font-style: normal;
     font-weight: 700;
-    position: absolute;
-    top: 50%;
-    left: 16px;
-    transform: translateY(-50%);
     text-align: left;
     z-index: 2;
     font-size: 24px;
-    line-height: 100%;
+    padding-left: 15px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 
-    @media only screen and (min-width: 360px) {
-      max-width: 230px;
-      width: 100%;
+    @media only screen and (max-width: 425.5px) {
+      font-size: 20px;
+      max-width: 190px;
+      left: 1%;
     }
 
     @media only screen and (min-width: 601px) {
       font-size: 32px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       text-align: center;
-      line-height: 142.6%;
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      width: calc(100% - 32px);
-      max-width: none;
       white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      padding-left: 0;
     }
 
     @media only screen and (min-width: 992px) {
-      width: 100%;
       font-size: 40px;
     }
 
@@ -77,30 +57,11 @@
     }
   }
 
-  @media only screen and (min-width: 360px) {
-    padding-top: 17.5%;
-    width: 100%;
-    margin-left: 1%;
-  }
-
-  @media only screen and (min-width: 480px) {
-    padding-top: 17.5%;
-    width: 90%;
-    margin-left: 5%;
+  @media only screen and (min-width: 1024px) {
+    border-radius: 25px;
   }
 
   @media only screen and (min-width: 768px) {
-    border-radius: 15px;
-  }
-
-  @media only screen and (min-width: 992px) {
-    width: calc(100% + 70px);
-    margin-left: -35px;
-    padding-top: 19%;
-    border-radius: 20px;
-  }
-
-  @media only screen and (min-width: 1024px) {
     border-radius: 25px;
   }
 }

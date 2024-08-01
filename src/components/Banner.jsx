@@ -5,7 +5,7 @@ const Banner = ({ title, imageUrl, overlayOpacity = 0.6, alt }) => {
     <div className="banner">
       <img src={imageUrl} alt={alt} />
       <div
-        className="overlay opacity-25"
+        className="overlay"
         style={{ backgroundColor: `rgba(0, 0, 0, ${overlayOpacity})` }}
       ></div>
       {title && <h1 className="banner-title">{title}</h1>}
