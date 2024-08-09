@@ -6,7 +6,7 @@ const Error404Page = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigatation("/");
-    }, 5000);
+    }, 7000);
     return () => clearTimeout(timer);
   }, [navigatation]);
 

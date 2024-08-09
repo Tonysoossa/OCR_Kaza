@@ -1,8 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
 
-// const logo = "../images/logo-kasa.svg";
-// const logoFooter = "../images/logo-kasa-white.svg";
-
 import logo from "../images/logo-kasa.svg";
 import logoFooter from "../images/logo-kasa-white.svg";
 

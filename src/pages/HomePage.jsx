@@ -1,5 +1,5 @@
 import Banner from "../components/Banner";
-
+import Card from "../components/Card";
 import homeBannerImg from "../images/banner-kasa-home.png";
 
 const HomePage = () => {
@@ -10,6 +10,7 @@ const HomePage = () => {
         alt="Paysage"
         title="Chez vous, partout et ailleurs"
       />
+      <Card />
     </>
   );
 };

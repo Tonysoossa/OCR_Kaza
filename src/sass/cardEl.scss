@@ -1,0 +1,90 @@
+
+// NOTE HOST CSS
+
+.host {
+  display: flex;
+  align-items: center;
+  max-width: 33%;
+  gap: 15px;
+  padding-right: 30px;
+  @media only screen and (max-width: 1024px) {
+    padding-right: 0px;
+    gap: 10px;
+  }
+}
+
+.host-name {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ff6060;
+  text-align: right;
+  @media only screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+  @media only screen and (min-width: 1024px) {
+    font-size: 18px;
+  }
+}
+
+.host-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  @media only screen and (min-width: 1024px) {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+// NOTE STARS RATING CSS
+
+.rating {
+  display: flex;
+  gap: 5px;
+  font-size: 14px;
+
+  @media screen and (min-width: 1024px) {
+    align-self: flex-end;
+    font-size: 24px;
+  }
+}
+
+.full-star {
+  color: #ff6060;
+}
+
+.empty-star {
+  color: #e0e0e0;
+}
+
+// NOTE TAGS CSS
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff6060;
+  color: white;
+  min-width: 84px;
+  height: 18px;
+  padding: 0.5em 0.9em;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 142.6%;
+
+  @media only screen and (min-width: 1024px) {
+    min-width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+}

@@ -1,6 +1,5 @@
 import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
-
 import aboutBannerImg from "../images/banner-kasa-about.png";
 
 const respectText = `La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
