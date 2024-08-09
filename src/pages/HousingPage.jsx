@@ -3,7 +3,9 @@ import { useEffect } from "react";
 import logements from "../data/logements.json";
 import Slider from "../components/Slider";
 import Collapse from "../components/Collapse";
-import { Host, Rating, Tags } from "../components/CardEl";
+import Host from "../components/Host";
+import Rating from "../components/Rating";
+import Tags from "../components/Tags";
 
 const HousingPage = () => {
   // Recup l'ID du logement depuis param d'URL

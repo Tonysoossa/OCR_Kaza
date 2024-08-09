@@ -16,7 +16,7 @@
   .next {
     cursor: pointer;
     position: absolute;
-    top: calc(55% - 30px);
+    top: calc(60% - 30px);
     font-size: 30px;
     padding: 0 15px 0 15px;
     color: white;
@@ -38,6 +38,10 @@
 
   @media (min-width: 600px) {
     height: 200px;
+    .prev,
+    .next {
+      top: calc(67.5% - 50px);
+    }
     .counter {
       display: inline;
       position: absolute;
@@ -53,7 +57,7 @@
     height: 260px;
     .prev,
     .next {
-      top: calc(55% - 50px);
+      top: calc(60% - 50px);
       font-size: 50px;
     }
   }
@@ -63,7 +67,7 @@
     border-radius: 25px;
     .prev,
     .next {
-      top: calc(55% - 80px);
+      top: calc(60% - 80px);
       font-size: 80px;
       padding: 0 25px 0 25px;
     }

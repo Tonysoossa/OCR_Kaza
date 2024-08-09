@@ -1,0 +1,18 @@
+.rating {
+  display: flex;
+  gap: 5px;
+  font-size: 14px;
+
+  @media screen and (min-width: 1024px) {
+    align-self: flex-end;
+    font-size: 24px;
+  }
+}
+
+.full-star {
+  color: #ff6060;
+}
+
+.empty-star {
+  color: #e0e0e0;
+}
