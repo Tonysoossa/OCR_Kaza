@@ -26,11 +26,11 @@ function Slideshow({ images }) {
   return (
     <div className="slideshow">
       <button className="prev" onClick={prevSlide}>
-        <i class="fa-solid fa-chevron-left"></i>
+        <i className="fa-solid fa-chevron-left"></i>
       </button>
       <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
       <button className="next" onClick={nextSlide}>
-        <i class="fa-solid fa-chevron-right"></i>
+        <i className="fa-solid fa-chevron-right"></i>
       </button>
       <div className="counter">
         {currentIndex + 1}/{images.length}
