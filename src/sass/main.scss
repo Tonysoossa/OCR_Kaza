@@ -13,6 +13,8 @@ $font-size-desktopXL: 25px;
 }
 
 body {
+  max-width: 1440px;
+  margin: 0 auto;
   font-family: $font-family;
   background-color: #fff;
   font-size: $font-size-mobile;

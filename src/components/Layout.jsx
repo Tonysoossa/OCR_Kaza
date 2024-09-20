@@ -38,10 +38,8 @@ const Layout = ({ children }) => {
       </header>
 
       <main>{children}</main>
-
       <footer>
         <img src={logoFooter} alt=" logo Kasa" className="logo-footer" />
-  
         <p>© 2020 Kasa. All rights reserved</p>
       </footer>
     </div>

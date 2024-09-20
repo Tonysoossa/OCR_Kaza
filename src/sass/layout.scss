@@ -1,8 +1,11 @@
 .background {
   background-color: $background-layout;
-  z-index: -1;
   width: 100%;
   min-height: 100vh;
+  z-index: -1;
+  @media (min-width: 1440px) {
+    min-height: 0vh;
+  }
 }
 
 .header-content {
@@ -10,12 +13,19 @@
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding: 30px 40px 0px 40px;
+  padding: 30px 60px 0 60px;
+
+  @media (max-width: 768px) {
+    padding: 30px 40px 0px 40px;
+  }
+
+  @media (max-width: 426px) {
+    padding: 30px 10px 0px 10px;
+  }
 
   .logo {
     width: 160px;
     padding-left: 5px;
-
     @media (min-width: 768px) {
       height: 68px;
     }
@@ -24,7 +34,7 @@
       width: 120px;
     }
 
-    @media (max-width: 425.5px) {
+    @media (max-width: 426px) {
       width: 90px;
     }
 
@@ -72,7 +82,13 @@
 }
 
 main {
-  padding: 30px 40px;
+  padding: 30px 60px;
+  @media (max-width: 768px) {
+    padding: 30px 40px;
+  }
+  @media (max-width: 426px) {
+    padding: 30px 5px;
+  }
 }
 
 footer {
@@ -82,9 +98,13 @@ footer {
   align-items: center;
   gap: 1.5em;
   color: $font-color-footer;
-  padding: 50px 0 40px 0;
+  padding: 50px 0px 40px 0px;
   font-size: 1.33rem;
-
+  @media (min-width: 1440px) {
+    border-right: inset 55px #fff;
+    border-left: outset 55px #fff;
+    padding: 72px 0px 74px 0px;
+  }
   .logo-footer {
     width: 122px;
   }
